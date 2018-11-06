@@ -3,8 +3,7 @@
 .gradle
 
 
-/local.propertperties
-
+/local.properties
 .idea
 
 .DS_Store
