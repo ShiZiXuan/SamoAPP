@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="._activity._mywallet.FenhongActivity">
+<include layout="@layout/title"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总分红收益"
+            android:textColor="@color/white_ff"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="以太币1个（1560元）"
+            android:textSize="22sp"
+            android:textColor="@color/white_ff"
+            android:layout_marginTop="10dp"
+            />
+        <Button
+            android:id="@+id/bt_fenhong_tixian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提现至imtoken"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/shape_white_bac"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            />
+    </LinearLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/fenhong_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabTextColor="#000000" />
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fenhong_vp"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="@android:color/white"/>
+</LinearLayout>

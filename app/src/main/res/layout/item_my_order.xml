@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_bac"
+   android:paddingBottom="20dp"
+    >
+<ImageView
+    android:id="@+id/item_order_iv"
+    android:layout_width="100dp"
+    android:layout_height="80dp"
+    android:src="@mipmap/ic_launcher"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="15dp"
+    />
+    <TextView
+        android:id="@+id/item_order_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="汽车座椅背收纳袋"
+        android:textColor="@color/black_07"
+        android:layout_alignTop="@id/item_order_iv"
+        android:layout_toRightOf="@id/item_order_iv"
+        android:layout_marginLeft="5dp"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发货中"
+        android:textColor="@color/red_ff"
+        android:layout_alignTop="@id/item_order_iv"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMV"
+        android:textColor="@color/black_07"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/item_order_name"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+
+        />
+    <TextView
+        android:id="@+id/item_order_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="合计：1000"
+        android:textColor="@color/black_07"
+        android:layout_below="@id/item_order_name"
+        android:layout_toLeftOf="@id/tv3"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="共一个商品"
+        android:textColor="@color/black_07"
+        android:layout_below="@id/item_order_name"
+        android:layout_toLeftOf="@id/item_order_account"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMV"
+        android:textColor="@color/red_ff"
+        android:layout_alignLeft="@id/tv3"
+        android:layout_below="@id/item_order_account"
+        android:layout_marginTop="5dp"
+
+        />
+    <TextView
+    android:id="@+id/tv1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="返还:"
+    android:textColor="@color/black_07"
+    android:layout_alignLeft="@id/item_order_account"
+    android:layout_below="@id/item_order_account"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    />
+    <TextView
+        android:id="@+id/item_order_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20"
+        android:textColor="@color/red_ff"
+        android:layout_below="@id/item_order_account"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/tv1"
+
+        />
+</RelativeLayout>

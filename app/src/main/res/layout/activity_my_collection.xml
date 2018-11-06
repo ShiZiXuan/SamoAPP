@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="._fragment._mine.MyCollectionActivity"
+    android:orientation="vertical"
+    android:background="@color/white_ff"
+    >
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="我的收藏"
+        android:textColor="@color/white_ff"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/right_arrow"
+        android:paddingLeft="12dp"
+        />
+    <LinearLayout
+        android:id="@+id/nocollection_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/meiyoujilu"
+
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="亲，还没有任何你喜欢的吗~快去收藏吧"
+        android:layout_marginTop="20dp"
+        />
+    </LinearLayout>
+</LinearLayout>

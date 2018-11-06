@@ -1,0 +1,278 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_f2"
+    >
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="综合收益"
+        android:textColor="@color/white_ff"
+        android:textSize="18sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:text="累计收益"
+        android:textColor="@color/white_ff"
+        android:textSize="14sp"
+        android:background="@color/colorPrimary"
+        />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    >
+    <TextView
+        android:id="@+id/service_yitaibi_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="以太币3个（5600元）"
+        android:textSize="20sp"
+        android:textColor="@color/white_ff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        />
+    <TextView
+        android:id="@+id/service_detail_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/service_yitaibi_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="查看详情"
+        android:background="@drawable/shape_primary_but"
+        android:textColor="@color/white_ff"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/service_detail_bt"
+        android:layout_marginTop="12dp"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最大年化收益率"
+                android:textColor="@color/white_ff"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="42%"
+                android:textColor="@color/white_ff"
+                android:textSize="18sp"
+                android:layout_marginTop="12dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/serve_myMoney"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前资产"
+                android:textColor="@color/white_ff"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30000元桩"
+                android:textColor="@color/white_ff"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30000SMV"
+                android:textColor="@color/white_ff"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="充电桩综合收益组成介绍"
+        android:textColor="@color/black_64"
+        android:textSize="14sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/white_ff"
+        >
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="增值服务"
+        android:textColor="@color/black_64"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_ff"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="5dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_car_model"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/unite_ripple"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/car_model"
+            android:gravity="center"
+            android:text="热销车型"
+            android:textColor="@color/black_32"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_auto_finance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/unite_ripple"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/auto_finance"
+            android:gravity="center"
+            android:text="金融服务"
+            android:textColor="@color/black_32"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_business_plan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/unite_ripple"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/business_plan"
+            android:gravity="center"
+            android:text="企业方案"
+            android:textColor="@color/black_32"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_rent_purchase"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/unite_ripple"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/to_rent_purchasing"
+            android:gravity="center"
+            android:text="以租代购"
+            android:textColor="@color/black_32"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_ff"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="5dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_driving"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/unite_ripple"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/driving"
+            android:gravity="center"
+            android:text="代驾"
+            android:textColor="@color/black_32"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_car_insurance_purchase"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/unite_ripple"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/car_insurance_purchase"
+            android:gravity="center"
+            android:text="车险购买"
+            android:textColor="@color/black_32"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_service"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/unite_ripple"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/service"
+            android:gravity="center"
+            android:text="保养与维修"
+            android:textColor="@color/black_32"
+            android:textSize="14sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_illegal_inquiry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/unite_ripple"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/illegal_inquiry"
+            android:gravity="center"
+            android:text="违章查询"
+            android:textColor="@color/black_32"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

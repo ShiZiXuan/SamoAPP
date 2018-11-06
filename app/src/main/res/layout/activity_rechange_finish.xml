@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="._activity._mywallet.RechangeFinishActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/colorPrimary"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="充值完成"
+        android:textColor="@color/white_ff"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="充值完成"
+        android:textColor="@color/black_07"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/chognzhiwancheng"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="￥30000.00"
+    android:textColor="@color/black_07"
+    android:textSize="18sp"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp"
+    />
+    <Button
+        android:id="@+id/bt_back_mywallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="返回我的钱包"
+        android:background="@drawable/shape_primary_but"
+        android:textColor="@color/white_ff"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        />
+</LinearLayout>
